@@ -1,0 +1,23 @@
+{
+  "name": "node-flow-demo",
+  "version": "1.0.0",
+  "description": "Demo project for flow in a serverside app",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --watch --source-maps --out-dir dist",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Beaumont",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "flow-bin": "^0.37.1"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
